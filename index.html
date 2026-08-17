@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Her Fitness - Shop & move with us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">COMPLIMENTARY DELIVERY OVER R1000</div>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-wrap">
+      <div class="left-icons">
+        <span class="menu-icon" onclick="toggleMobileMenu()">☰</span>
+        <span class="search-icon">🔍</span>
+      </div>
+      <div class="logo">Her Fitness</div>
+      <div class="right-icons">
+        <span>👤</span>
+        <span>♡</span>
+        <span class="cart-icon" onclick="toggleCart()">🛍 <span id="cart-count">0</span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Rewards Bar -->
+  <div class="rewards-bar">
+    <span>GET REWARDS WITH <b>Her Fitness access</b></span>
+    <a href="#">SIGN IN</a>
+  </div>
+
+  <!-- Categories -->
+  <section class="categories container">
+    <div class="cat">
+    <div><img src="picture\W5417803299.webp"alt="WOMAEN'S" width="300" height="300"></div>
+      <p>WOMEN'S</p>
+    </div>
+    <div class="cat">
+      <div><img src="picture\W6519R_08023_b1_s1_a5_dSU26_m246_1_750x.webp" alt="New In" width="300" height="300"></div>
+      <p>NEW IN</p>
+    </div>
+    <div class="cat">
+      <div><img src="picture\W5766R_05438_b1_s1_a6_1_m191_750x.webp" alt="BEST SELLERS" width="300" height="300"></div>
+      <p>BEST SELLERS</p>
+    </div>
+    <div class="cat">
+      <div><img src="picture\M3254R_05435_b1_s1_a2_m209_750x.webp" alt="SWEATSHIRTS" width="300" height="300"></div>
+      <p>SWEATSHIRTS</p>
+    </div>
+</section>
+  <!-- Hero Banner -->
+  <section class="hero-banner">
+    <div class="hero-text">
+    </div>
+      <p><h1>The</i><br>Tone.</h1></p>
+      <p>New standout performance<br>styles bring unmatched energy.</p>
+    </div>
+    <div class="cat">
+    <div><img src="picture\alo-hp-mobile-template_1e4f0332-3c9d-422d-88d6-9ad0d7ca3543_750x.webp" alt="TENNIS" width="900" height="600"></div>
+    <a href="#products" class="shop-btn">SHOP TENNIS</a>
+    </div>
+
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="products container">
+    <h2>Shop The Collection</h2>
+    <div class="product-grid" id="productGrid">
+      <!-- Products will load here via JS -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="container footer-grid">
+      <div>
+        <h3>Her Fitness</h3>
+        <p>Shop & move with us. ★★★ 4.8/5 from 200+ customers</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>WhatsApp: +27 81 479 8447</p>
+        <p>Email: Her Fitness@gmail.com</p>
+        <p>Mon-Sat 9am-5pm</p>
+      </div>
+      <div>
+        <h3>Shipping</h3>
+        <p>R100 Delivery JHB & PTA</p>
+        <p>7-Day return policy</p>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Her Fitness.</p>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <span class="close-cart" onclick="toggleCart()">×</span>
+    </div>
+    <div id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-total">Total: R<span id="cartTotal">0</span></div>
+      <button class="btn" onclick="checkoutWhatsApp()">Checkout via WhatsApp</button>
+    </div>
+  </div>
+  <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
